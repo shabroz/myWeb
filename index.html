@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BinCoin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,24 +15,18 @@
     <link rel="stylesheet" href="./css/styles.css" /
   </head>
   <body>
-    <section class="block block--skewed-left">
-      <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          laboriosam.
-        </p>
-        <div style="width: 30%; padding: 4rem">
-          <div class="card card--secondary">
-            <header class="card__header">Card Title</header>
-            <div class="card__body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,
-              assumenda?
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Markets</a></li>
+        <li class="nav__item"><a href="#">White Paper</a></li>
+        <li class="nav__item"><a href="#">Road Map</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
 
     <script src="js/main.js"></script>
   </body>

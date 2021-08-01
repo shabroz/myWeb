@@ -15,21 +15,209 @@
     <link rel="stylesheet" href="./css/styles.css" /
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Markets</a></li>
+          <li class="nav__item"><a href="#">White Paper</a></li>
+          <li class="nav__item"><a href="#">Road Map</a></li>
+          <li class="nav__item"><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">
+            BinCoin is Fast, Secure and 100% private
+          </h1>
+          <p class="hero__tagline">
+            BinCoin is decentralized anonymous payment system based on privacy
+            which is not only private but also secure.
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="images/banner.png" alt="" />
+        </picture>
+      </div>
+    </section>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>BinCoin Smart Chain Explorer</h2>
+        <p>
+          Explorer facilitates the user to search for the transaction and it's current status.
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Search by Address/Txn Hash/Block..."
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use></svg
+          >Search
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">BinCoin $9</span></li>
+        <li>BTC $41002</li>
+        <li>Monero $191</li>
+        <li>Dash $240</li
+      </ul>
+    </section>
+    <section data-aos="fade-up" class="block container block-plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Price</h3>
+              <span class="plan__price">$1</span>
+              <span class="plan__billing-cycle">/coin</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Offer valid on Dex panCakeSwap</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Connect with metaMask</li>
+                <li class="list__item">Instant Transaction</li>
+                <li class="list__item">minmum buy $10</li>
+                <li class="list__item">Welcome to the BinCoin</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Price</h3>
+              <span class="plan__price">$0.80</span>
+              <span class="plan__billing-cycle">/coin</span>
+              <span class="badge badge--primary badge--small">20% OFF</span>
+              <span class="plan__description">Only valid for Existing Binance Customer</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Binance</li>
+                <li class="list__item">Instant Transaction</li>
+                <li class="list__item">minmum buy $10</li>
+                <li class="list__item">Welcome to the BinCoin</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Price</h3>
+              <span class="plan__price">$1</span>
+              <span class="plan__billing-cycle">/coin</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Only Valid for New Customer</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Coinbase</li>
+                <li class="list__item">Instant settlement</li>
+                <li class="list__item">minmum buy $10</li>
+                <li class="list__item">Welcome to the BinCoin</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>BinCoin is trusted technology </h2>
+        <p>
+          BinCoin is a digital currency which was lauched by the most trusted technical team. 
+          The way BinCoin works is let you spend your coins without compromising your privacy. BinCoin is already trading on the top exchanges.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Superfast for retails </h3>
+          <p>
+            Merchants, app developers and point-of-sale providers need easy-to-integrate solutions that provide privacy protections for consumers, and audibility at the same time. BinCoin was built for this.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Adoption growth rate</h3>
+          <p>
+            The adoption rate is part of the diffusion of innovation theory. BinCoin server request growth clearly shows where we are heading and which explains how the BinCoin technolgy is getting accepted by the peaole.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
     <section class="block block--dark block--skewed-right block-showcase">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>Mobile Wallet</h2>
       </header>
       <div class="container grid grid--1x2">
         <picture class="block-showcase__image">
           <source
             type="image/webp"
-            srcset="images/spaceman.webp 1x, images/spaceman@2x.webp 2x"
+            srcset="images/wallet.webp 1x, images/wallet@2x.webp 2x"
           />
           <source
             type="image/png"
-            srcset="images/spaceman.png, images/spaceman@2x.png 2x"
+            srcset="images/wallet.png 1x, images/wallet@2x.png 2x"
           />
-          <img src="images/spaceman.png" alt="" />
+          <img src="images/wallet.png" alt="" />
         </picture>
         <ul class="list">
           <li>
@@ -40,11 +228,9 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <h3 class="media__title">Easy to Send & Recieve </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
+                  Instant settlement of the transfer makes BinCoin the retailers first choice.
                 </p>
               </div>
             </div>
@@ -57,11 +243,9 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                <h3 class="media__title">Trust Issue Solving</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
+                  BinCoin has a trustless setup. This means that there is no need for any verification or elaborate setup in order to use BinCoin.
                 </p>
               </div>
             </div>
@@ -74,11 +258,9 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
+                <h3 class="media__title">Digital Money You Can Trust</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
+                  In traditional blockchains and various "partial" anonymity chains, the users are exposed to analytics and malicious attack vectors. Many attackers / hackers around the world use this exposed data to exploit cryptocurrency users. We aim to preserve everyone's right to control their ﬁnances as they see ﬁt. BinCoin merged successful and tested privacy protocols to create the most private blockchain to date
                 </p>
               </div>
             </div>
@@ -86,6 +268,109 @@
         </ul>
       </div>
     </section>
-    
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            In traditional blockchains and various "partial" anonymity chains,
+            the users are exposed to analytics and malicious attack vectors.
+            Many attackers / hackers around the world use this exposed data to
+            exploit cryptocurrency users. We aim to preserve everyone's right to
+            control their ﬁnances as they see ﬁt. BinCoin merged successful and
+            tested privacy protocols to create the most private blockchain to
+            date.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">John Smith</h3>
+                <p class="quote__organization">ABC Company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Staking</a></li>
+              <li><a href="#">Masternode</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Telegram</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Domains</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="images/logo.svg" alt="" />
+          <p class="footer__copyright">Copyright 2021 BinCoin</p>
+        </section>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

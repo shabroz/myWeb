@@ -809,7 +809,7 @@ a {
     justify-self: end;
   }
   .block-showcase__image>img {
-    width: auto%;
+    width: auto;
     max-width: 600px;
   }
 }

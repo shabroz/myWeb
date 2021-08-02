@@ -1,7 +1,7 @@
 @import "./normalize.css";
 :root {
   --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
+  --color-secondary: #9dc6fb;
   --color-accent: #ffd064;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -120,7 +120,7 @@ a {
 }
 
 .badge--secondary {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -339,11 +339,11 @@ a {
 }
 
 .card--primary .badge--primary {
-  background: #126de4;
+  background: #1b0760;
 }
 
 .card--secondary .badge--secondary {
-  background: #02cdf1;
+  background: #126de4;
 }
 
 /* Plans */
